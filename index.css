@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 2, 13, 1) 0%, rgba(0, 12, 36, 1) 100%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 50px;
+    
+}
+
+.header {
+    margin: 20px 0;
+
+    & h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    & h3 {
+        font-size: 0.8em;
+        color: rgb(153, 153, 153);
+    }
+}
+
+.total-by-platform {
+    padding: 50px;
+    margin: 0 auto;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.platform-card {
+    background: linear-gradient(145deg, rgba(29, 35, 40, 1) 0%, rgba(13, 19, 33, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid white;
+    border-radius: 5px;
+    width: 85%;
+    max-width: 85%;
+    padding: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    & h3 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    & .followers-text {
+        font-size: 0.8em;
+        color: rgb(153, 153, 153);
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+    }
+}
+
+.platform-card:hover {
+    transform: scale(0.94);
+    -webkit-transform: scale(0.94);
+    -moz-transform: scale(0.94);
+    -ms-transform: scale(0.94);
+    -o-transform: scale(0.94);
+
+    background: linear-gradient(145deg, rgba(40, 54, 60, 1) 0%, rgba(36, 57, 107, 1) 100%);
+}
+
+.follower-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-handle {
+    display: flex;
+    align-items: center;
+
+
+    & p {
+        font-size: 0.8em;
+        color: rgb(153, 153, 153);
+    }
+
+    & i {
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
+}
+
+.overall-growth {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+    font-size: 0.8em;
+}
+
+.fa-sort-up {
+    position: relative;
+    top: 6px;
+}
+
+.fa-sort-down {
+    position: relative;
+}
+
+.fa-square-facebook {
+    color: blue;
+}
+
+.fa-x-twitter {
+    color: rgb(139, 139, 139);
+}
+
+.fa-instagram {
+    background: linear-gradient(145deg, rgba(249, 206, 52, 1) 6%, rgba(238, 42, 123, 1) 65%, rgba(98, 40, 215, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.growth {
+    color: green;
+}
+
+.decline {
+    color: red;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        font-size: 1.3em;
+        color: rgba(40, 54, 60, 1);
+        font-weight: 900;
+    }
+}
+
+.facebook-overview,
+.instagram-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
